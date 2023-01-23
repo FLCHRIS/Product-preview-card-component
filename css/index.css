@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root{
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --fontMontserrat: 'Montserrat', sans-serif;
+    --fontFraunces: 'Fraunces', serif;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Cream);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: var(--White);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 340px;
+    overflow: hidden;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+}
+.image{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+.card-information{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.information-subtitle{
+    display: inline-block;
+    letter-spacing: 5px;
+    font-family: var(--fontMontserrat);
+    font-size: 1em;
+    color: var(--DarkGrayishBlue);
+    font-weight: 500;
+    padding-bottom: .5em;
+}
+.information-title{
+    font-family: var(--fontFraunces);
+    font-size: 2.5em;
+    padding-bottom: .5em;
+    color: var(--VeryDarkBlue);
+}
+.information-paragraph{
+    color: var(--DarkGrayishBlue);
+    font-family: var(--fontMontserrat);
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+.information-price,
+.information-off{
+    display: inline-block;
+    margin: .8em 0;
+}
+.card-information div{
+    display: flex;
+    align-items: center;
+}
+.information-price{
+    font-size: 2.2em;
+    font-family: var(--fontFraunces);
+    color: var(--DarkCyan);
+    font-weight: 700;
+}
+.information-off{
+    color: var(--DarkGrayishBlue);
+    font-size: 1em;
+    margin-left: 1em;
+    text-decoration: line-through;
+}
+.information-button{
+    width: 100%;
+    padding: 1em 0;
+    background-color: var(--DarkCyan);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    font-family: var(--fontMontserrat);
+    font-weight: 700;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: background-color .3s;
+}
+.button-icon{
+    width: 20px;
+    margin-right: .8em;
+}
+.information-button:hover{
+    background-color: var(--VeryDarkBlue);
+}
+@media screen and (min-width: 700px) {    
+    .card{
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+    }
+    .image{
+        width: 50%;
+        height: 100%;
+    }
+    .card-information{
+        width: 40%;
+    }
+    .information-subtitle{
+        display: inline-block;
+        letter-spacing: 5px;
+        font-family: var(--fontMontserrat);
+        font-size: 1em;
+        color: var(--DarkGrayishBlue);
+        font-weight: 500;
+        padding-bottom: .5em;
+    }
+    .information-title{
+        font-family: var(--fontFraunces);
+        font-size: 2.5em;
+        padding-bottom: .5em;
+        color: var(--VeryDarkBlue);
+    }
+    .information-paragraph{
+        color: var(--DarkGrayishBlue);
+        font-family: var(--fontMontserrat);
+        font-size: 1.1em;
+        font-weight: 500;
+        line-height: 1.4em;
+    }
+    .information-price,
+    .information-off{
+        display: inline-block;
+        margin: .8em 0;
+    }
+    .card-information div{
+        display: flex;
+        align-items: center;
+    }
+    .information-price{
+        font-size: 2.2em;
+        font-family: var(--fontFraunces);
+        color: var(--DarkCyan);
+        font-weight: 700;
+    }
+    .information-off{
+        color: var(--DarkGrayishBlue);
+        font-size: 1em;
+        margin-left: 1em;
+        text-decoration: line-through;
+    }
+    .information-button{
+        width: 100%;
+        padding: 1em 0;
+        background-color: var(--DarkCyan);
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--White);
+        font-family: var(--fontMontserrat);
+        font-weight: 700;
+        font-size: 1.2em;
+        border-radius: 10px;
+    }
+    .button-icon{
+        width: 20px;
+        margin-right: .8em;
+    }
+}
