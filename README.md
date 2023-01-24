@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/product-preview-card-component-4LoGaVDJ37)
+- Live Site URL: [Live site URL](https://taupe-dango-e5d559.netlify.app/)
 
 ## My process
 
